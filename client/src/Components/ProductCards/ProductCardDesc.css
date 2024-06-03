@@ -1,0 +1,95 @@
+.product-cards {
+    position: relative;
+    background-color: #191919;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.product-cards a {
+    text-decoration: none;
+}
+
+.product-cards:hover {
+    transform: perspective(1000px) rotateY(180deg);
+    cursor: pointer;
+}
+
+.card-content {
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background-color: #1f1f1f;
+}
+
+.product-cards:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+.card-body {
+    font-family: 'Switzer', sans-serif;
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.new-price {
+    color: #ffc107;
+}
+
+.rating {
+    display: flex;
+}
+
+.star {
+    color: #999;
+    margin-right: 2px;
+}
+
+.filled {
+    color: #ffc107;
+}
+
+/* Hide elements by default and show them on hover */
+.product-cards .card-body .truncated-text {
+    max-height: 100%;
+    overflow: visible;
+}
+
+.product-cards:hover .card-body .truncated-text {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.product-cards .card-body .complete-description {
+    display: none;
+}
+
+.product-cards:hover .card-body .complete-description {
+    display: block;
+}
+
+/* Hide the image on hover */
+.product-cards img {
+
+    display: block;
+    background-color: #3b3333b9;
+    margin: auto;
+    padding: 20px;
+    /* This will center the image both horizontally and vertically */
+}
+
+
+.product-cards:hover img {
+    display: none;
+}

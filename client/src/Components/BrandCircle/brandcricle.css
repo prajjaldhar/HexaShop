@@ -1,0 +1,30 @@
+/* Apply some styling to the circular brand image */
+.brand-circle {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    /* Border color */
+    border-radius: 50%;
+    /* Make it a circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition on hover */
+}
+
+/* Center the brand image within the circle */
+.brand-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    /* Add a smooth transition on hover */
+}
+
+/* Scale up the image on hover */
+.brand-circle img:hover {
+    transition: scale 0.3s ease-in-out;
+    /* Adjust the duration and timing function as needed */
+    /* Adjust the scale factor as needed */
+}

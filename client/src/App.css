@@ -1,0 +1,57 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navbar-brand {
+  color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+  color: #1266f1;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navbar-brand {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Apply flex layout to images and nav items */
+.navbar-scroll .navbar-nav,
+.navbar-scrolled .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Additional styles for images */
+.navbar-scroll .navbar-nav img,
+.navbar-scrolled .navbar-nav img {
+  margin-right: 10px;
+  /* Add some spacing between images and nav items */
+}
+
+* {
+  background-color: #030303;
+}

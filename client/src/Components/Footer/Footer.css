@@ -1,0 +1,14 @@
+.footer {
+    background-color: #000;
+    /* Dark background color */
+}
+
+.text-white {
+    color: #fff !important;
+    /* White text color */
+}
+
+.text-white a {
+    color: #c5c5c5eb !important;
+    /* White text color */
+}

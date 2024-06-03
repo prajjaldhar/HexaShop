@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Center the content vertically in the container */
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Adjust the height as needed */
+}
+
+.product-card-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Add some margin and padding for spacing */
+.left-container,
+.right-container {
+    margin: 10px;
+    /* Adjust as needed */
+    padding: 10px;
+    margin-left: -198px;
+    /* Adjust as needed */
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition */
+}
+
+/* Set width and height for the left image */
+.left-container img {
+    width: 60%;
+    /* Reduce the width of the left image */
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition */
+}
+
+/* Set a maximum width and height for the images in the right container */
+.right-card img {
+    max-width: 100%;
+    height: 90px;
+    margin-bottom: 27px;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition */
+}
+
+/* Add some spacing between the right images */
+.right-card {
+    margin-right: -56px;
+}
+
+/* Hover effect on each individual image */
+.left-container img:hover,
+.right-card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    /* Scale up image on hover */
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+    .product-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the width and height for the left image on smaller screens if needed */
+    .left-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-card {
+        margin-right: 0;
+        margin-bottom: 10px;
+        /* Reduce the size of the right card on smaller screens */
+        max-width: 100%;
+        height: 300px;
+        /* Adjust as needed */
+    }
+
+    /* Reduce the gap between left and right containers */
+    .left-container,
+    .right-container {
+        margin: 10px;
+        /* Adjust as needed */
+    }
+}

@@ -1,0 +1,16 @@
+.banner {
+    width: 100vw;
+    height: 400px;
+    /* You can adjust the height as needed */
+    overflow: hidden;
+}
+
+.body {
+    background-color: black;
+}
+
+.banner-image {
+    width: 100vw;
+    height: 110%;
+    object-fit: fill;
+}
